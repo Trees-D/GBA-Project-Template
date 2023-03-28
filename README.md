@@ -14,18 +14,18 @@
 
    ```json
    {
-       "C_Cpp.autocomplete": "default",
-       "C_Cpp.autocompleteAddParentheses": true,
+       "clangd": "Disabled", // if install `clangd` extension
        "C_Cpp.intelliSenseEngine": "default",
        "C_Cpp.formatting": "clangFormat",
        "C_Cpp.default.compilerPath": ".../DevKitPro/devkitARM/bin/arm-none-eabi-gcc.exe",
        "C_Cpp.default.includePath": [
-           ".../DevKitPro/projects/template/ext/*",
-           ".../DevKitPro/projects/template/ext/gba/*",
-           ".../DevKitPro/projects/template/ext/tonc/*",
-           ".../DevKitPro/projects/template/include/*",
-           ".../DevKitPro/projects/template/include/**",
+           ".ext/*",
+           "./ext/gba/*",
+           "./ext/tonc/*",
+           "./include/*",
+           "./include/**",
        ],
+       "C_Cpp.default.intelliSenseMode": "windows-gcc-arm",
        "files.associations": {
            "*.h": "c"
        },
